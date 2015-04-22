@@ -21,9 +21,8 @@ div.page-header img{
 div.upcoming{
   background:#166374;
   color: #d6d2cc;
-  padding-top: 10px;
-  padding-left:40px;
-  padding-right:40px;
+  padding: 10px 40px 20px 40px;
+
 }
 div.upcoming table{
   color: #d6d2cc;
@@ -45,6 +44,10 @@ div.megagames{
   color: #d6d2cc;
   padding-left:40px;
   padding-right:40px;
+}
+
+div.megagames .well{
+  color:black;
 }
 
 div.faq{
