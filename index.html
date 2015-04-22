@@ -6,12 +6,13 @@
     <link rel="stylesheet" type="text/css" href="index.css">
   </head>
   <body>
-    <div class="page-header container-fluid">
+    <div id="top" class="page-header container-fluid">
       <img src="images/mainlogo.png"/>
       <h1>About The MegaGame Society</h1>
       <p>We're a collection of game designers, graphic artists, and megagame enthusiasts that are all committed to designing, developing, and running high quality 20+ person games. We currently are devoted to developing this genre and bringing these games to everyone!  Based in NYC, we work with groups across the US, Canada and the world to help them setup their own local Megagame groups and run games of their own.</p>
     </div>
-    <div class="upcoming container-fluid">
+
+    <div id="upcoming" class="upcoming container-fluid">
       <h1>News and Upcoming Games</h1>
       <div class="row">
         <div class="col-md-8">
@@ -20,14 +21,31 @@
               <th>Date</th>
               <th></th>
               <th></th>
+              <th></th>
             </thead>
             <tbody>
-              <td>June 27th</br>
-              10:30 AM - 6:30 PM</td>
-              <td>
-                Watch the Skies Rookies Game</br>
-                NYU Game Center, Brooklyn, NY
-              </td>
+              <tr>
+                <td>June 27th</br>
+                10:30 AM - 6:30 PM</td>
+                <td>
+                  Watch the Skies Rookies Game</br>
+                  NYU Game Center, Brooklyn, NY
+                </td>
+                <td>
+                  <a href="https://www.eventbrite.com/e/watch-the-skies-rookies-game-tickets-16421563338">Event Page</a>
+                </td>
+              </tr>
+              <tr>
+                <td>July 26th</br>
+                </td>
+                <td>
+                  Watch the Skies Rookies Game 2</br>
+                  
+                </td>
+                <td>
+                  Event Page Coming soon!
+                </td>
+              </tr>
             </tbody>
           </table>
         </div>
@@ -37,7 +55,17 @@
         </div>
       </div>
     </div>
-    <div class="faq container-fluid">
+    <div id ="megagames" class="megagames container-fluid">
+      <h1>Current Megagames</h1>
+      <h4>What is a Megagame?</h4>
+      <p>
+      A megagame is a game, only bigger. Mega bigger. Part board game, part rpg, a megagame is made up of several simultaneous, interlocking games, that join together to create one giant story that plays out over the course of the day. The basic rules of the game might be constant but thanks to player tactics, ingenuity and plain old bluffing, every game is an entirely unique narrative.
+      </p>
+      <div class="row">
+
+      </div>
+    </div>
+    <div id="faq" class="faq container-fluid">
       <h1>Frequently Asked Questions</h1>
       <div class="panel panel-default">
         <div class="panel-heading">
@@ -46,7 +74,7 @@
         <div class="panel-body">
           We are working on multiple groups in multiple cities.  You can contact us about potentially using our materials to set up your own games!
         </div>
-         <div class="panel-heading">
+        <div class="panel-heading">
           <h3 class="panel-title">How can I help?</h3>
         </div>
         <div class="panel-body">
@@ -54,5 +82,16 @@
         </div>
       </div>
     </div>
+    <nav class="navbar navbar-default navbar-fixed-bottom">
+      <ul class="nav nav-tabs nav-justified">
+        <li role="presentation"><a href="#top">Top</a></li>
+
+        <li role="presentation"><a href="#upcoming">News</a></li>
+
+        <li role="presentation"><a href="#megagames">Current Megagames</a></li>
+
+        <li role="presentation"><a href="#faq">FAQ</a></li>
+      </ul>
+    </nav>
   </body>
 </html>
