@@ -1,20 +1,22 @@
 <html>
   <head>
     <title>Megagame Society</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <link href='http://fonts.googleapis.com/css?family=Merriweather:400,400italic|Varela+Round' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="index.css">
   </head>
   <body>
-    <div id="top" class="page-header container-fluid">
-      <img src="images/mainlogo.png"/>
-      <h1>About The MegaGame Society</h1>
-      <p>We're a collection of game designers, graphic artists, and megagame enthusiasts that are all committed to designing, developing, and running high quality 20+ person games. We currently are devoted to developing this genre and bringing these games to everyone!  Based in NYC, we work with groups across the US, Canada and the world to help them setup their own local Megagame groups and run games of their own.</p>
-    </div>
-    <div id="upcoming" class="upcoming container-fluid">
-      <h1>News and Upcoming Games</h1>
-      <div class="row">
-        <div class="col-md-8">
+    <section id="top" class="page-header">
+      <div class="content">
+        <div class="logo"><img src="images/mainlogo.png" alt="The MegaGame Society" /></div>
+        <h1>About The MegaGame Society</h1>
+        <p>We're a collection of game designers, graphic artists, and megagame enthusiasts that are all committed to designing, developing, and running high quality 20+ person games. We currently are devoted to developing this genre and bringing these games to everyone!  Based in NYC, we work with groups across the US, Canada and the world to help them setup their own local Megagame groups and run games of their own.</p>
+      </div>
+    </section>
+    <section id="upcoming" class="upcoming">
+      <div class="content">
+        <h1>News and Upcoming Games</h1>
+        <div class="events-container">
+          <h3>Upcoming Games</h3>
           <table class="table">
             <tbody>
               <tr>
@@ -42,26 +44,37 @@
             </tbody>
           </table>
         </div>
-        <div class="col-md-4">
-          <a class="twitter-timeline" href="https://twitter.com/MegaGameSociety" data-widget-id="590578913799188481">Tweets by @MegaGameSociety</a>
+        <div class="twitter-container">
+          <a class="twitter-timeline"
+             width="300"
+             height="400"
+             href="https://twitter.com/MegaGameSociety"
+             data-theme="dark"
+             data-widget-id="590578913799188481"
+             data-chrome="noborders transparent"
+             data-link-color="#fb4241">Tweets by @MegaGameSociety</a>
           <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
         </div>
+
+        <div>
+          <!-- Eventbrite, Facebook, Twitter, and Instagram links to go here.-->
+        </div>
       </div>
-      <div class="row">
-        <!-- Eventbrite, Facebook, Twitter, and Instagram links to go here.-->
-      </div>
-    </div>
-    <div id ="megagames" class="megagames container-fluid">
-      <h1>Current Megagames</h1>
-      <h4>What is a Megagame?</h4>
-      <p>
-        A megagame is a game, only bigger. Mega bigger. Part board game, part rpg, a megagame is made up of several simultaneous, interlocking games, that join together to create one giant story that plays out over the course of the day. The basic rules of the game might be constant but thanks to player tactics, ingenuity and plain old bluffing, every game is an entirely unique narrative.
-      </p>
-      <div class="well">
-        <div class="row">
-          <img class="col-md-5" src="images/WatchTheSkiesLogo.png" height="200" width="500"/>
-          <div class="col-md-6">
-            <p>Part RPG and part board game, our flagship fame "Watch the Skies" brings together 60 players who will play on teams as various nations, news reporters, corporate factions and the alien visitors.
+    </section>
+    <section id ="megagames" class="megagames">
+      <div class="content">
+        <h1>Current Megagames</h1>
+        <h3>What is a Megagame?</h3>
+        <p>
+          A megagame is a game, only bigger. Mega bigger. Part board game, part rpg, a megagame is made up of several simultaneous, interlocking games, that join together to create one giant story that plays out over the course of the day. The basic rules of the game might be constant but thanks to player tactics, ingenuity and plain old bluffing, every game is an entirely unique narrative.
+        </p>
+
+        <div class="game">
+          <h3>Watch the Skies!</h3>
+          <img src="images/WatchTheSkiesLogo.png" />
+          <div class="synopsis">
+            <p>
+              Part RPG and part board game, our flagship fame "Watch the Skies" brings together 60 players who will play on teams as various nations, news reporters, corporate factions and the alien visitors.
             </p>
             <p>
               Watch the Skies takes place in a near future Earth very much like our own… but aliens have arrived on the planet. Around 60 players will play on teams as nations, news reporters, and, of course, the aliens, while Earth struggles to figure out what is going on and if they can do it before civilization dissolves into chaos. Nations are represented by players acting as Heads of State, Deputy Heads of State, Chief Scientists, Military Commanders, and Foreign Ministers. Expect exciting battles, research on alien artifacts, espionage, and a version of the United Nations that’s a lot more fun than the one you modeled in high school. There’s also plenty of mysterious alien intrigue and scrappy press that can make or break the game.
@@ -71,42 +84,38 @@
             </p>
           </div>
         </div>
+
+        <h3>Upcoming Games</h3>
+        <p>We are currently in the process of building some upcoming Megagames.  Upcoming themes include:</p>
+        <ul>
+          <li>Lovecraftian Horror</li>
+          <li>Space Opera</li>
+          <li>Macbeth</li>
+          <li>Espionage</li>
+        </ul>
       </div>
-      <h4>Upcoming Games</h4>
-      <p>We are currently in the process of building some upcoming Megagames.  Upcoming themes include:
-      </p>
-      <ul>
-        <li>Lovecraftian Horror</li>
-        <li>Space Opera</li>
-        <li>Macbeth</li>
-        <li>Espionage</li>
-      </ul>
-    </div>
-    <div id="faq" class="faq container-fluid">
+    </section>
+
+    <section id="faq" class="faq">
+      <div class="content">
       <h1>Frequently Asked Questions</h1>
-      <div class="panel panel-default">
-        <div class="panel-heading">
-          <h3 class="panel-title">When will you be hosting an event in (Insert City Here)?</h3>
-        </div>
-        <div class="panel-body">
+        <h3>When will you be hosting an event in (Insert City Here)?</h3>
+        <p>
           We are working on multiple groups in multiple cities.  You can contact us about potentially using our materials to set up your own games!
-        </div>
-        <div class="panel-heading">
-          <h3 class="panel-title">How can I help?</h3>
-        </div>
-        <div class="panel-body">
+        </p>
+        <h3>How can I help?</h3>
+        <p>
           You can fill out this <a href="http://goo.gl/forms/4W3MXUswn5">form</a>.  We'd love to have your help.
-        </div>
-        <div class="panel-heading">
-          <h3 class="panel-title">I have a question/comment about one of your games.</h3>
-        </div>
-        <div class="panel-body">
-          You can reach us at <a href="mailto:contact@megagamesociety.com">contact@megagamesociety.com</a> 
-        </div>
+        </p>
+        <h3>I have a question/comment about one of your games.</h3>
+        <p>
+          You can reach us at <a href="mailto:contact@megagamesociety.com">contact@megagamesociety.com</a>
+        </p>
       </div>
-    </div>
-    <nav class="navbar navbar-default navbar-fixed-bottom">
-      <ul class="nav nav-tabs nav-justified">
+    </section>
+
+    <nav>
+      <ul class="nav">
         <li ><a href="#top">Top</a></li>
         <li ><a href="#upcoming">News</a></li>
         <li ><a href="#megagames">Current Megagames</a></li>

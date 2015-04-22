@@ -1,63 +1,228 @@
+/* -------------------------------------
+// Page Structure
+*/
+
+* {
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
 body {
-  padding:0px;
+  background-color: #d9d5cf;
+  color: #3e3e3e;
+  font-family: 'Merriweather', serif;
+  font-size: 14px;
+  font-size: 1.4rem;
+  margin: 0;
+  padding: 0 0 60px 0;
+  position: relative;
+}
+@media all and (max-width: 768px) {
+  body {
+    font-size: 12px;
+    font-size: 1.2rem;
+  }
 }
 
-nav .navbar{
-  margin-top:10px;
-}
-div.page-header {
-  margin-top: 0px;
-  margin-bottom:0px;
-  background: #d6d2cc;
-  padding-left:40px;
-  padding-right:40px;
+/* -------------------------------------
+// Text / Links
+*/
+
+h1,
+.menu a {
+  color: #d9d5cf;
+  font-family: 'Varela Round', sans-serif;
+  font-size: 28px;
+  font-size: 2.8rem;
 }
 
-div.page-header img{
-  position:relative;
-  left:-70px;
+h2 {
+  font-size: 22px;
+  font-size: 2.2rem;
+  font-style: italic;
 }
 
-div.upcoming{
-  background:#166374;
-  color: #d6d2cc;
-  padding: 10px 40px 20px 40px;
+@media all and (max-width: 768px) {
+  h1,
+  .menu a {
+    font-size: 20px;
+    font-size: 2.0rem;
+  }
+
+  h2 {
+    font-size: 16px;
+    font-size: 1.6rem;
+  }
 
 }
-div.upcoming table{
-  color: #d6d2cc;
-  border: 2px;
-  border-padding:2px;
+
+p {
+  margin-top: 0;
 }
 
-div.upcoming table a{
-  color:Red;
+p.secondary {
+  font-style: italic;
 }
 
-div.upcoming h1{
+a {
+  color: #fb4241;
+  display: inline-block;
+  font-family: 'Varela Round', sans-serif;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #FFFFFF;
+}
+
+/* -------------------------------------
+// Logo
+*/
+
+.logo {
+  position: relative;
+  margin: 10px auto 30px auto;
+}
+
+.logo img {
+  height: auto;
+  margin-bottom: 30px;
+  width: 100%;
+}
+
+
+/* -------------------------------------
+// Section Blocks
+*/
+
+section {
+  color: #d9d5cf;
+  padding: 30px 50px;
+}
+section.page-header,
+section.page-header h1 {
+  color: #3e3e3e;
+}
+
+section.upcoming {
+  background-color: #166374;
+}
+section.megagames {
+  background-color: #3e3e3e;
+}
+section.faq {
+  background-color: #aa1d1d;
+}
+section .content {
+  margin: 0 auto;
+  max-width: 856px;
+}
+
+/* -------------------------------------
+// Upcoming & Social
+*/
+
+.events-container {
+  display: inline-block;
+  float: left;
+  margin-right: 20px;
+  width: -webkit-calc(100% - 320px);
+  width: -moz-calc(100% - 320px);
+  width: -ms-calc(100% - 320px);
+  width: calc(100% - 320px);
+}
+
+/* Styling the same as the Tweets Header from Twitter. */
+.events-container h3 {
+  color: #cfcfcf;
+  font: normal normal normal 12px/16px "Helvetica Neue",Roboto,"Segoe UI",Calibri,sans-serif;
+  font-size: 14px;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+@media all and (max-width: 768px) {
+  .events-container {
+    float: none;
+    margin: 20px auto;
+    width: 100%;
+  }
+}
+
+.twitter-container {
+  display: inline-block;
+  width: 300px;
+}
+
+.upcoming table{
+  border-collapse: collapse;
+}
+
+.upcoming table td {
+  color: #d9d5cf;
+  padding: 8px;
+  vertical-align: top;
+  border-top: 1px solid #ddd;
+  font-size: 12px;
+  font-size: 1.2rem;
+}
+
+.upcoming h1{
   margin-top:0px;
   border-top:0px;
 }
 
-div.megagames{
-  background:#3e3e3e;
-  color: #d6d2cc;
-  padding-left:40px;
-  padding-right:40px;
+/* -------------------------------------
+// Games
+*/
+
+.megagames ul {
+  list-style-position: inside;
 }
 
-div.megagames .well{
-  color:black;
+.game img {
+  display: block;
+  margin: 10px 0px;
+  width: 100%;
 }
 
-div.faq{
-  background:#aa1d1d;
-  color: #d6d2cc;
-  padding-left:40px;
-  padding-right:40px;
-  margin-bottom:50px;
+/* -------------------------------------
+// FAQ
+*/
+
+.faq h3 {
+  font-style: italic;
 }
 
-div.faq .panel-body{
-  color:black;
+.faq a {
+  color: #38a7c1;
+}
+
+.faq a:hover {
+  color: #FFFFFF;
+}
+
+/* -------------------------------------
+// Bottom Navigation
+*/
+
+nav {
+  background: #000;
+  bottom: 0px;
+  padding: 0px 10px;
+  position: fixed;
+  width: 100%;
+}
+
+nav .nav li {
+  display: inline-block;
+}
+nav a {
+  border: 0px;
+  display: inline-block;
+  font-size: 16px;
+  font-size: 1.6rem;
+  padding: 10px;
 }
