@@ -217,6 +217,11 @@ nav {
   width: 100%;
 }
 
+nav ul.nav {
+  max-width: 856px;
+  margin: 1em auto;
+}
+
 nav .nav li {
   display: inline-block;
 }
